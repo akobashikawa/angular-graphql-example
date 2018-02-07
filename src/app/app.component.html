@@ -1,3 +1,21 @@
+<!--The content below is only a placeholder and can be replaced.-->
 <div>
-  Hello Angular
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <pre>
+  </pre>
+  <div>
+    <ul>
+      <li *ngFor="let center of data.centers">
+        {{ center.name }}
+        <ul>
+          <li *ngFor="let service of center.services">
+            {{ service.description }}
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
 </div>
+
